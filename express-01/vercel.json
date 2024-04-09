@@ -1,3 +1,15 @@
-{ "version": 2, "builds": [{"src": "express-01/src/", "use": "@vercel/node"}], 
-   "routes": [{ "src": "/express-01/src/routes", "dest": "/" }] 
+{
+   "version": 2,
+   "builds": [
+    {
+        "src": "express-01/src/index.js",
+        "use": "@vercel/node"
+    }
+   ],
+   "routes": [
+    {
+        "src": "/(.*)",
+        "dest": "/"
+    }
+   ]
 }
