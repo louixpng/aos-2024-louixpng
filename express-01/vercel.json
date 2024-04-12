@@ -1,15 +1,21 @@
 {
-   "version": 2,
-   "builds": [
+  "version": 2,
+  "builds": [
     {
-        "src": "express-01/src/api/index.js",
-        "use": "@vercel/node"
+      "src": "express-01/src/api/index.js",
+      "use": "@vercel/node"
     }
-   ],
-   "routes": [
+  ],
+  "rewrites": [
     {
-        "src": "/(.*)",
-        "dest": "express-01/src/api/index.js"
+      "source": "/(.*)",
+      "destination": "/api"
     }
-   ]
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "express-01/src/api/index.js"
+    }
+  ]
 }
