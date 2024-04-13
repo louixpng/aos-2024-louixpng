@@ -8,7 +8,7 @@
     "builds": [
       {
        "src": "/express-01/(.*)",
-       "dest": "/express-01/api/index.js"   
+       "use": "@now/node"   
     }
   ] 
 }
