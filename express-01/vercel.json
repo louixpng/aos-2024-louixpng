@@ -1,14 +1,1 @@
-{ 
-  "version": 2,
-   "rewrites": [
-    {
-       "source": "/express-01/(.*)", "destination": "/express-01/api" 
-    }
-  ],
-    "builds": [
-      {
-    
-       "use": "@vercel/node"   
-    }
-  ] 
-}
+{ "version": 2, "rewrites": [{ "source": "/express-01/(.*)", "destination": "/express-01/api" }] }
