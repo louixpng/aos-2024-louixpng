@@ -8,7 +8,7 @@
     "builds": [
       {
     
-       "use": "@now/node"   
+       "use": "@vercel/node"   
     }
   ] 
 }
